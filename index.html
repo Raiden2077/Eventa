@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventa — больше, чем студенчество</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-wrap">
+      <button class="icon-btn menu-btn" aria-label="Меню">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M0 1H22" stroke="#171A2B" stroke-width="2" stroke-linecap="round"/><path d="M0 8H22" stroke="#171A2B" stroke-width="2" stroke-linecap="round"/><path d="M0 15H22" stroke="#171A2B" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#" class="logo">Eventa</a>
+
+      <nav class="main-nav">
+        <a href="#events" class="nav-link nav-link-active">Мероприятия</a>
+        <a href="#match" class="nav-link">Поиск людей</a>
+        <a href="#" class="nav-link">О проекте</a>
+      </nav>
+
+      <button class="icon-btn user-btn" aria-label="Профиль">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#2F5BFF" stroke-width="1.8"/><path d="M4 20C4 16.134 7.582 13 12 13C16.418 13 20 16.134 20 20" stroke="#2F5BFF" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-wrap">
+      <div class="hero-content">
+        <h1 class="hero-title">Твой вуз.<br>Твои люди.<br>Твои проекты.</h1>
+        <p class="hero-subtitle">Календарь мероприятий, подбор по интересам и поиск единомышленников.</p>
+        <button class="btn btn-white">Найти команду</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- Search -->
+    <section class="search-block">
+      <form class="search-bar" role="search">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#8B90A6" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="#8B90A6" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" class="search-input" placeholder="Поиск мероприятий, людей, тегов…">
+        <button type="button" class="search-filter" aria-label="Фильтры">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 6H20M7 12H17M10 18H14" stroke="#2F5BFF" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+    </section>
+
+    <!-- Category filters -->
+    <nav class="filters" aria-label="Категории">
+      <button class="chip chip-active">
+        <svg class="chip-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 18L3 12L9 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6L21 12L15 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        IT
+      </button>
+      <button class="chip">
+        <svg class="chip-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 8.5L21 9L16 13.5L17.5 20L12 16.5L6.5 20L8 13.5L3 9L9.5 8.5L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Творчество
+      </button>
+      <button class="chip">
+        <svg class="chip-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7H21V13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Маркетинг
+      </button>
+      <button class="chip">
+        <svg class="chip-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8"/><path d="M12 2V5M12 19V22M22 12H19M5 12H2M19.07 4.93L16.95 7.05M7.05 16.95L4.93 19.07M19.07 19.07L16.95 16.95M7.05 7.05L4.93 4.93" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Инженерия
+      </button>
+      <button class="chip">
+        <svg class="chip-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M9 8H15M9 12H15M9 16H12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Наука
+      </button>
+    </nav>
+
+    <!-- Event cards -->
+    <section class="events" id="events" aria-label="Мероприятия">
+
+      <article class="card">
+        <div class="card-media media-hack">
+          <span class="media-tag">VIBE CODING</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Хакатон – VIBE CODING</h3>
+          <p class="card-meta">8 ноября | 12:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media media-forum">
+          <span class="media-badge">THINK<br>CODE</span>
+          <svg class="media-mouse" width="34" height="52" viewBox="0 0 34 52" fill="none"><rect x="1" y="1" width="32" height="50" rx="16" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/><line x1="17" y1="1" x2="17" y2="18" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Форум – THINK CODE</h3>
+          <p class="card-meta">10 ноября | 16:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media media-hack">
+          <span class="media-tag">VIBE CODING</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Хакатон – VIBE CODING</h3>
+          <p class="card-meta">8 ноября | 12:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media media-forum">
+          <span class="media-badge">THINK<br>CODE</span>
+          <svg class="media-mouse" width="34" height="52" viewBox="0 0 34 52" fill="none"><rect x="1" y="1" width="32" height="50" rx="16" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/><line x1="17" y1="1" x2="17" y2="18" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Форум – THINK CODE</h3>
+          <p class="card-meta">10 ноября | 16:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media media-hack">
+          <span class="media-tag">VIBE CODING</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Хакатон – VIBE CODING</h3>
+          <p class="card-meta">8 ноября | 12:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media media-forum">
+          <span class="media-badge">THINK<br>CODE</span>
+          <svg class="media-mouse" width="34" height="52" viewBox="0 0 34 52" fill="none"><rect x="1" y="1" width="32" height="50" rx="16" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/><line x1="17" y1="1" x2="17" y2="18" stroke="white" stroke-opacity="0.8" stroke-width="1.6"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Форум – THINK CODE</h3>
+          <p class="card-meta">10 ноября | 16:00 · г. Санкт-Петербург</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Match-making block -->
+    <section class="match" id="match">
+      <div class="match-card">
+        <div class="match-text">
+          <h2 class="match-title">Поиск единомышленников</h2>
+          <p class="match-desc">Свайпайте анкеты студентов с похожими интересами и находите команду для проекта, соседа по общаге или напарника на хакатон.</p>
+          <button class="btn btn-primary">Начать поиск</button>
+        </div>
+        <div class="match-visual">
+          <div class="profile-card">
+            <div class="profile-photo">
+              <img src="assets/student.jpg" alt="Артём, студент 2 курса">
+            </div>
+            <div class="profile-info">
+              <p class="profile-name">Артём, 2 курс</p>
+              <p class="profile-sub">Ищу команду на хакатон — 10 ноября</p>
+              <div class="profile-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Роботы</span>
+              </div>
+              <div class="profile-tags">
+                <span class="tag">Настолки</span>
+              </div>
+              <div class="profile-actions">
+                <button class="round-btn reject" aria-label="Пропустить">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="#E5527A" stroke-width="2.4" stroke-linecap="round"/></svg>
+                </button>
+                <button class="round-btn accept" aria-label="Откликнуться">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6" stroke="#26B77A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-brand-block">
+        <div class="footer-brand">
+          <span class="logo logo-light">Eventa</span>
+          <span class="footer-tag">— больше, чем студенчество</span>
+        </div>
+        <p class="footer-meta">Студенческая афиша<br>© 2026 Eventa</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23h-4.5V8.25zM8.44 8.25h4.31v2.02h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.43c0-1.53-.03-3.5-2.13-3.5-2.14 0-2.47 1.67-2.47 3.4V23h-4.5V8.25z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="ВКонтакте">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M13.1 17.2c-4.9 0-7.7-3.4-7.8-8.9h2.5c.1 3.9 1.8 5.6 3.1 5.9V8.3h2.4v3.5c1.3-.1 2.7-1.7 3.2-3.5h2.4c-.4 2.2-2 3.8-3.1 4.5 1.1.6 2.9 2 3.6 4.4h-2.6c-.5-1.7-1.8-3-3.5-3.2v3.2h-.2z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Telegram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M22 3.5L2.6 11.2c-1.3.5-1.3 1.2-.2 1.5l4.9 1.5 1.9 5.8c.2.6.4.8.8.8.4 0 .6-.2.8-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L22 4.5c.3-1.2-.4-1.7-1.5-1.2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
